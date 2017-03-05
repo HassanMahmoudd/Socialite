@@ -1,0 +1,430 @@
+/*html,*/
+/*body {*/
+    /*display: -webkit-box;*/
+    /*display: -ms-flexbox;*/
+    /*display: flex;*/
+    /*min-height: 100%;*/
+    /*-webkit-box-pack: center;*/
+    /*-ms-flex-pack: center;*/
+    /*justify-content: center;*/
+    /*-webkit-box-align: center;*/
+    /*-ms-flex-align: center;*/
+    /*align-items: center;*/
+    /*-webkit-box-orient: vertical;*/
+    /*-webkit-box-direction: normal;*/
+    /*-ms-flex-direction: column;*/
+    /*flex-direction: column;*/
+    /*font-family: sans-serif;*/
+/*}*/
+
+/*ul,*/
+/*li {*/
+    /*list-style: none;*/
+    /*margin: 0;*/
+    /*padding: 0;*/
+/*}*/
+
+body {
+    /*font-size: 10px;*/
+    font-family: "Source Sans Pro", Arial, sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+.edit-profile-form .tg-list,
+.post-status-form .tg-list,
+.signup-form .tg-list,
+.edit-post-form .tg-list-modal {
+    text-align: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.post-status-form .tg-list h5 {
+    /*color: #777;*/
+}
+
+.edit-profile-form h5,
+.post-status-form h5,
+.signup-form h5,
+.edit-post-form h5 {
+    font-weight: bold;
+}
+
+.tg-list-item {
+    /*margin: 0 2em;*/
+}
+
+/*h2 {*/
+    /*color: #777;*/
+/*}*/
+
+/*h4 {*/
+    /*color: #999;*/
+/*}*/
+
+.edit-profile-form .tgl,
+.post-status-form .tgl,
+.signup-form .tgl,
+.edit-post-form .tgl-modal {
+    display: none;
+}
+.edit-profile-form .tgl, .tgl:after, .tgl:before, .tgl *, .tgl *:after, .tgl *:before, .tgl + .tgl-btn,
+.post-status-form .tgl, .tgl:after, .tgl:before, .tgl *, .tgl *:after, .tgl *:before, .tgl + .tgl-btn,
+.signup-form .tgl, .tgl:after, .tgl:before, .tgl *, .tgl *:after, .tgl *:before, .tgl + .tgl-btn,
+.edit-post-form .tgl-modal, .tgl-modal:after, .tgl-modal:before, .tgl-modal *, .tgl-modal *:after, .tgl-modal *:before, .tgl-modal + .tgl-btn-modal {
+    box-sizing: border-box;
+}
+.edit-profile-form .tgl::-moz-selection, .tgl:after::-moz-selection, .tgl:before::-moz-selection, .tgl *::-moz-selection, .tgl *:after::-moz-selection, .tgl *:before::-moz-selection, .tgl + .tgl-btn::-moz-selection,
+.post-status-form .tgl::-moz-selection, .tgl:after::-moz-selection, .tgl:before::-moz-selection, .tgl *::-moz-selection, .tgl *:after::-moz-selection, .tgl *:before::-moz-selection, .tgl + .tgl-btn::-moz-selection,
+.signup-form .tgl::-moz-selection, .tgl:after::-moz-selection, .tgl:before::-moz-selection, .tgl *::-moz-selection, .tgl *:after::-moz-selection, .tgl *:before::-moz-selection, .tgl + .tgl-btn::-moz-selection,
+.edit-post-form .tgl-modal::-moz-selection, .tgl-modal:after::-moz-selection, .tgl-modal:before::-moz-selection, .tgl-modal *::-moz-selection, .tgl-modal *:after::-moz-selection, .tgl-modal *:before::-moz-selection, .tgl-modal + .tgl-btn-modal::-moz-selection {
+    background: none;
+}
+.edit-profile-form .tgl::selection, .tgl:after::selection, .tgl:before::selection, .tgl *::selection, .tgl *:after::selection, .tgl *:before::selection, .tgl + .tgl-btn::selection,
+.post-status-form .tgl::selection, .tgl:after::selection, .tgl:before::selection, .tgl *::selection, .tgl *:after::selection, .tgl *:before::selection, .tgl + .tgl-btn::selection,
+.signup-form .tgl::selection, .tgl:after::selection, .tgl:before::selection, .tgl *::selection, .tgl *:after::selection, .tgl *:before::selection, .tgl + .tgl-btn::selection,
+.edit-post-form .tgl-modal::selection, .tgl-modal:after::selection, .tgl-modal:before::selection, .tgl-modal *::selection, .tgl-modal *:after::selection, .tgl-modal *:before::selection, .tgl-modal + .tgl-btn-modal::selection {
+    background: none;
+}
+.edit-profile-form .tgl + .tgl-btn,
+.post-status-form .tgl + .tgl-btn,
+.signup-form .tgl + .tgl-btn,
+.edit-post-form .tgl-modal + .tgl-btn-modal {
+    outline: 0;
+    display: block;
+    width: 4em;
+    height: 2em;
+    position: relative;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+.edit-profile-form .tgl + .tgl-btn:after, .tgl + .tgl-btn:before,
+.post-status-form .tgl + .tgl-btn:after, .tgl + .tgl-btn:before,
+.signup-form .tgl + .tgl-btn:after, .tgl + .tgl-btn:before,
+.edit-post-form .tgl-modal + .tgl-btn-modal:after, .tgl + .tgl-btn-modal:before {
+    position: relative;
+    display: block;
+    content: "";
+    width: 50%;
+    height: 100%;
+}
+.edit-profile-form .tgl + .tgl-btn:after,
+.post-status-form  .tgl + .tgl-btn:after,
+.signup-form .tgl + .tgl-btn:after,
+.edit-post-form .tgl-modal + .tgl-btn-modal:after {
+    left: 0;
+}
+.edit-profile-form .tgl + .tgl-btn:before,
+.post-status-form .tgl + .tgl-btn:before,
+.signup-form .tgl + .tgl-btn:before,
+.edit-post-form .tgl-modal + .tgl-btn-modal:before {
+    display: none;
+}
+.edit-profile-form .tgl:checked + .tgl-btn:after,
+.post-status-form .tgl:checked + .tgl-btn:after,
+.signup-form .tgl:checked + .tgl-btn:after,
+.edit-post-form .tgl-modal:checked + .tgl-btn-modal:after {
+    left: 50%;
+}
+
+.edit-profile-form .tgl-light + .tgl-btn,
+.post-status-form .tgl-light + .tgl-btn,
+.signup-form .tgl-light + .tgl-btn,
+.edit-post-form .tgl-light-modal + .tgl-btn-modal {
+    background: #f0f0f0;
+    border-radius: 2em;
+    padding: 2px;
+    -webkit-transition: all .4s ease;
+    transition: all .4s ease;
+}
+.edit-profile-form .tgl-light + .tgl-btn:after,
+.post-status-form .tgl-light + .tgl-btn:after,
+.signup-form .tgl-light + .tgl-btn:after,
+.edit-post-form .tgl-light-modal + .tgl-btn-modal:after {
+    border-radius: 50%;
+    background: #fff;
+    -webkit-transition: all .2s ease;
+    transition: all .2s ease;
+}
+.edit-profile-form .tgl-light:checked + .tgl-btn,
+.post-status-form .tgl-light:checked + .tgl-btn,
+.signup-form .tgl-light:checked + .tgl-btn,
+.edit-post-form .tgl-light-modal:checked + .tgl-btn-modal {
+    background: #9FD6AE;
+}
+
+.edit-profile-form .tgl-light + .tgl-btn,
+.signup-form .tgl-light + .tgl-btn {
+    background: #9FD6AE;
+}
+
+div.controls {
+    margin-bottom: 12px;
+    border: 1px dotted #fafafa;
+    padding: 25px 20px;
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.edit-profile-form .controls,
+.signup-form .controls{
+    padding: 0 15px;
+}
+
+div.controls h1 {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1;
+    text-transform: uppercase;
+    display: inline-block;
+    position: absolute;
+    left: 10px;
+    top: -10px;
+    padding: 0 10px;
+    color: #fafafa;
+    background-color: #54bded;
+}
+
+.edit-profile-form input[type='radio'],
+.signup-form input[type='radio']{
+    display: none;
+    cursor: pointer;
+}
+.edit-profile-form input[type='radio']:focus, input[type='radio']:active,
+.signup-form input[type='radio']:focus, input[type='radio']:active {
+    outline: none;
+}
+.edit-profile-form input[type='radio'] + label,
+.signup-form input[type='radio'] + label {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    padding-left: 25px;
+    margin-right: 10px;
+    color: #333;
+}
+.edit-profile-form input[type='radio'] + label:before, input[type='radio'] + label:after,
+.signup-form input[type='radio'] + label:before, input[type='radio'] + label:after {
+    content: '';
+    font-family: helvetica;
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    left: 0;
+    bottom: 0;
+    text-align: center;
+    position: absolute;
+}
+.edit-profile-form input[type='radio'] + label:before,
+.signup-form input[type='radio'] + label:before {
+    background-color: #fafafa;
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+.edit-profile-form input[type='radio'] + label:after,
+.signup-form input[type='radio'] + label:after {
+    color: #fff;
+}
+.edit-profile-form input[type='radio']:checked + label:before,
+.signup-form input[type='radio']:checked + label:before {
+    -moz-box-shadow: inset 0 0 0 10px #158EC6;
+    -webkit-box-shadow: inset 0 0 0 10px #158EC6;
+    box-shadow: inset 0 0 0 10px #158EC6;
+}
+
+/*Radio Specific styles*/
+.edit-profile-form input[type='radio'] + label:before,
+.signup-form input[type='radio'] + label:before {
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+}
+.edit-profile-form input[type='radio'] + label:hover:after, input[type='radio']:checked + label:after,
+.signup-form input[type='radio'] + label:hover:after, input[type='radio']:checked + label:after {
+    content: '\2022';
+    position: absolute;
+    top: 0px;
+    font-size: 19px;
+    line-height: 15px;
+}
+.edit-profile-form input[type='radio'] + label:hover:after,
+.signup-form input[type='radio'] + label:hover:after {
+    color: #c7c7c7;
+}
+.edit-profile-form input[type='radio']:checked + label:after, input[type='radio']:checked + label:hover:after,
+.signup-form input[type='radio']:checked + label:after, input[type='radio']:checked + label:hover:after {
+    color: #fff;
+}
+
+.profile-status-photo {
+    margin-bottom: 15px;
+}
+
+/*** Edit Post Modal Is Public Toggle Button ***/
+
+.toggle {
+    position: relative;
+    width: 95px;
+    height: 35px;
+    border: 5px solid #e9e9e9;
+    border-radius: 40px;
+}
+
+.toggle input {
+    opacity: 0;
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 6;
+    width: 84px;
+    height: 34px;
+}
+
+.toggle input:checked ~ .btn {
+    left: 50px;
+}
+
+.toggle input:checked ~ .bg {
+    background: linear-gradient(#242424, #a2a2a2);
+}
+
+.toggle .btn {
+    display: block;
+    position: absolute;
+    z-index: 4;
+    top: -10px;
+    left: -5px;
+    width: 45px;
+    height: 45px;
+    background: linear-gradient(rgba(253,253,253,1) 0%,rgba(255,255,255,1) 3%,rgba(252,252,252,1) 13%,rgba(228,228,228,1) 50%,rgba(221,221,221,1) 55%,rgba(208,208,208,1) 85%,rgba(205,205,205,1) 100%);
+    border: 2px solid #e8e8e8;
+    border-radius: 50px;
+    box-shadow: 0 5px 5px rgba(50, 50, 50, 0.2);
+    transition: left 0.25s ease;
+}
+
+.toggle .btn:after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -12.5px;
+    margin-left: -12.5px;
+    width: 25px;
+    height: 25px;
+    box-shadow: inset 0 2px 5px 0 rgba(0, 0, 0, 0.08);
+    background: #e3e3e3;
+    border-radius: 50px;
+}
+
+.toggle .labels {
+    position: absolute;
+    top: 10px;
+    z-index: 2;
+    width: 100%;
+    font-family: Helvetica, sans-serif;
+    font-weight: bold;
+    color: #fff;
+    text-transform: uppercase;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+}
+
+.toggle .labels:before {
+    content: "On";
+    position: absolute;
+    left: 12px;
+}
+
+.toggle .labels:after {
+    content: "Off";
+    position: absolute;
+    right: 12px;
+}
+
+.toggle .bg {
+    display: block;
+    position: absolute;
+    z-index: 0;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 40px;
+    box-shadow: inset 0 2px 5px 0 rgba(0, 0, 0, 0.2);
+    background: linear-gradient(#848484, #a2a2a2)
+}
+
+.navbar {
+    /*margin-bottom: 0;*/
+}
+
+.home-header {
+    position: relative;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+}
+
+.home-header h2
+ {
+    color: #ccc;
+    position: absolute;
+    top:40%;
+    right: 10%;
+}
+
+.home-header p {
+    color: #ccc;
+    position: absolute;
+    top:47%;
+    right: 12%;
+}
+
+.home-header .buttons {
+    padding-top: 420px;
+    padding-left: 1020px;
+}
+
+.home-header .buttons button {
+    background: transparent;
+    padding: 10px 0;
+    width: 180px;
+    font-size: 16px;
+    border: 2px solid #ccc;
+    margin: 0 8px;
+//border-radius: 10px;
+    -webkit-transition: all .5s ease-in-out;
+    -moz-transition: all .5s ease-in-out;
+    transition: all .5s ease-in-out;
+    color: #ccc;
+    margin-bottom: 20px;
+
+}
+
+.home-header .buttons button:hover {
+    background-color: #333;
+    border: 2px solid #333;
+    color: #fff;
+    text-shadow: none;
+}
+
+.emoji {
+    height: 22px; !important;
+    margin: 0 .05em 0 .1em;
+    vertical-align: -0.1em;
+}
