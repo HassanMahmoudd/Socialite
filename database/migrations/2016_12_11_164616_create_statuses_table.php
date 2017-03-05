@@ -17,6 +17,7 @@ class CreateStatusesTable extends Migration
             $table->integer('user_id');
             $table->integer('parent_id')->nullable();
             $table->integer('is_public')->nullable();
+            $table->string('image');
             $table->text('body');
             $table->timestamps();
         });
