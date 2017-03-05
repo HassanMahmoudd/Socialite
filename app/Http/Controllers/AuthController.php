@@ -6,6 +6,8 @@ use Auth;
 use Illuminate\Http\Request;
 use App\Models\User;
 use App\Models\Phone;
+use Image;
+use Storage;
 
 class AuthController extends Controller {
     public function getSignup(){
