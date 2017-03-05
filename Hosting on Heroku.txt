@@ -1,0 +1,15 @@
+===> Steps to host your laravel application on Heroku
+
+1) Create an app on heroku
+2) Don't forget to erase /storage & /bootstrap from .gitignore file
+3) In your local app directory launch command line & type the following
+echo web: vendor/bin/heroku-php-apache2 public/ > Procfile
+4) Deploy that app using existing github repo
+5) In Resources tab .. Install ClearDB as an add-ons on your app
+6) In Settings tab .. Add config vars like (APP_DEBUG => true) 
+(APP_KEY => your local app key) .. Then add your database config vars following
+this link: http://selimsalihovic.github.io/2016-02-07-using-mysql-on-heroku/
+7) In your local app directory launch command line
+8) Type heroku login & follow your cridentials
+9) Type heroku config:set BUILDPACK_URL=https://github.com/heroku/heroku-buildpack-php --app (your app name on heroku)
+10) Type heroku run --app (your app name on heroku) php artisan migrate
